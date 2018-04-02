@@ -3,7 +3,7 @@ var config = {
   port : 8889,
   user : "root",
   password : "root",
-  database : "movies"
+  database : "movies2"
 }
 
 module.exports = config;

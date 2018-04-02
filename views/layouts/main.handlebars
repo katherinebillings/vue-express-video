@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{ title }}</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
 </head>
 <body>
 	<header>
-		<img src="images/roku.svg" alt="Roku logo" width="90"><span>FlashBack</span>
+		<img src="/images/roku.svg" alt="Roku logo" width="90"><span>FlashBack</span>
 		<nav>
 			<ul>
 				<li>Kids</li>
@@ -51,7 +51,12 @@
       // movies: "somestirng"
     }
   </script>
-  <script src="js/main.js" charset="utf-8"></script>
+	{{#if mainpage}}
+  <script src="/js/main.js" charset="utf-8"></script>
+	{{/if}}
+	{{#if videopage}}
+  <script src="/js/videopage.js" charset="utf-8"></script>
+	{{/if}}
 
 </body>
 </html>
